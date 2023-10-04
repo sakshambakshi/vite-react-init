@@ -9,6 +9,8 @@ export default defineConfig({
       { find: 'store', replacement: '/src/store' },
       { find: 'slice', replacement: '/src/slice' },
       { find: 'components', replacement: '/src/components' },
+      { find: 'service', replacement: '/src/service' },
+      { find: 'composition', replacement: '/src/composition' },
     ],
   }
 })

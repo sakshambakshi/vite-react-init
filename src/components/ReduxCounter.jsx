@@ -1,9 +1,18 @@
-import { useSelector , useDispatch } from "react-redux";
-import {increment , decrement} from "store/slice/counter.slice.js"
+import { useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { increment, decrement } from "store/slice/counter.slice.js"
+import { fetchProducts } from "store/slice/store.slice.js"
 
-export default function(){
+export default function () {
     const counter = useSelector((state) => state.counter.value)
     const dispatch = useDispatch()
+
+    useEffect(function () {
+
+        fetchTheProducts()
+        return abortRequest
+    }, [])
+
     return (
         <div>
             <h1>Counter</h1>
@@ -12,7 +21,7 @@ export default function(){
             </div>
             <div>
                 <div>
-                    <button onClick={() => dispatch(increment())}>Increment</button>
+                    <button onClick={console.log}>Increment</button>
                 </div>
             </div>
         </div>
