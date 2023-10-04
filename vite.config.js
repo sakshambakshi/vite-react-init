@@ -7,6 +7,8 @@ export default defineConfig({
     alias: [
       { find: 'src', replacement: '/src' },
       { find: 'store', replacement: '/src/store' },
+      { find: 'slice', replacement: '/src/slice' },
+      { find: 'components', replacement: '/src/components' },
     ],
   }
 })
