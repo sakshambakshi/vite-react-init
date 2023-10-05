@@ -7,11 +7,7 @@ export default function () {
     const counter = useSelector((state) => state.counter.value)
     const dispatch = useDispatch()
 
-    useEffect(function () {
 
-        fetchTheProducts()
-        return abortRequest
-    }, [])
 
     return (
         <div>
